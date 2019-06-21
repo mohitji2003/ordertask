@@ -1,0 +1,146 @@
+2019-06-21 07:36:58,065 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 14804 (C:\eclipse-workspace\yordex_test\order\target\classes started by Mohit Goel in C:\eclipse-workspace\yordex_test\order)
+2019-06-21 07:36:58,129 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 07:36:58,133 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 07:36:58,661 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-21 07:36:58,665 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-21 07:37:12,703 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 07:37:14,372 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 15706 ms
+2019-06-21 07:37:20,522 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 07:37:20,829 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 07:37:23,864 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 07:37:23,887 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 28.623 seconds (JVM running for 31.662)
+2019-06-21 07:37:39,579 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-06-21 07:37:39,983 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Completed initialization in 400 ms
+2019-06-21 07:38:02,024 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-5] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderCancelController.cancelOrder(String))
+2019-06-21 07:38:02,426 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-5] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderCancelController.cancelOrder(String))
+2019-06-21 07:38:02,438 DEBUG com.silver.bars.order.CustomizedResponseEntityExceptionHandler [http-nio-8083-exec-5] Application Encountered CUSTOM Error---------------------
+2019-06-21 07:38:02,622 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8083-exec-5] Resolved [com.silver.bars.order.CustomException: Order Cancelled Failed]
+2019-06-21 07:38:38,886 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-6] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 07:38:38,946 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-6] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 60
+2019-06-21 07:38:38,950 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-6] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 07:38:51,875 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-10] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 07:38:51,928 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-10] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 53
+2019-06-21 07:38:51,932 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-10] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 07:38:59,337 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-1] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.sellOrders())
+2019-06-21 07:38:59,341 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-1] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.sellOrders()) is 4
+2019-06-21 07:38:59,343 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-1] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.sellOrders())
+2019-06-21 07:39:06,171 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-3] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.buyOrders())
+2019-06-21 07:39:06,183 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-3] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.buyOrders()) is 12
+2019-06-21 07:39:06,183 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-3] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.buyOrders())
+2019-06-21 07:39:24,260 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-2] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderCancelController.cancelOrder(String))
+2019-06-21 07:39:24,263 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-2] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderCancelController.cancelOrder(String)) is 3
+2019-06-21 07:39:24,265 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-2] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderCancelController.cancelOrder(String))
+2019-06-21 07:39:36,188 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-4] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 07:39:36,188 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-4] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 0
+2019-06-21 07:39:36,188 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$444a61dc [http-nio-8083-exec-4] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 07:49:27,019 INFO com.silver.bars.order.OrderApplicationTests [main] Starting OrderApplicationTests on DESKTOP-G2J4167 with PID 19832 (started by Mohit Goel in C:\eclipse-workspace\yordex_test\order)
+2019-06-21 07:49:27,023 DEBUG com.silver.bars.order.OrderApplicationTests [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 07:49:27,027 INFO com.silver.bars.order.OrderApplicationTests [main] No active profile set, falling back to default profiles: default
+2019-06-21 07:49:51,434 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 07:49:57,072 INFO com.silver.bars.order.OrderApplicationTests [main] Started OrderApplicationTests in 33.036 seconds (JVM running for 39.728)
+2019-06-21 07:49:59,608 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder BEFORE Cancel:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,620 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder AFTER Cancel:[Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,648 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLCountRetrieve: [Order:5.5 kg for £306 //ordera + orderd, Order:1.5 kg for £307 //order c, Order:1.2 kg for £310 //order b]
+2019-06-21 07:49:59,676 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYSortOrder:[Order:1.9 kg for £1000 //order b, Order:1.1 kg for £100 //order a, Order:2.4 kg for £50 //orderd + ordere, Order:1.5 kg for £10 //order c]
+2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpecteSELLAndBUYCountRetrieve:[Order:2.7 kg for £310 //orderf + orderg, Order:2.0 kg for £308 //order h, Order:3.5 kg for £306 //order e, Order:5.5 kg for £306 //ordera + orderd, Order:1.5 kg for £307 //order c, Order:1.2 kg for £310 //order b]
+2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder BEFORE Cancel :[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,688 DEBUG com.silver.bars.order.OrderDataStoreTest [main] Cancel: Order Cancelled Failed
+2019-06-21 07:49:59,688 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder AFTER Cancel:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,700 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLSortOrder:[Order:1.5 kg for £10 //order c, Order:2.4 kg for £50 //orderd + ordere, Order:1.1 kg for £100 //order a, Order:1.9 kg for £1000 //order b]
+2019-06-21 07:49:59,704 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateAddOrder:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,708 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateInValidOrderType:[Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,716 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYCountRetrieve:[Order:2.7 kg for £310 //orderb + orderc, Order:2.0 kg for £308 //order d, Order:3.5 kg for £306 //order a]
+2019-06-21 07:50:00,302 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-3] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:18:12,315 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
+2019-06-21 12:18:12,329 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 12:18:12,332 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 12:18:12,610 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-21 12:18:12,612 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-21 12:18:27,346 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 12:18:28,664 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 16049 ms
+2019-06-21 12:18:33,910 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:18:34,151 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 12:18:36,520 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 12:18:36,536 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 27.346 seconds (JVM running for 33.997)
+2019-06-21 12:19:03,617 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-06-21 12:19:03,861 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Completed initialization in 240 ms
+2019-06-21 12:20:10,580 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:20:10,766 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 186
+2019-06-21 12:20:10,770 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:20:20,019 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:20:20,064 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 45
+2019-06-21 12:20:20,066 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:25:27,695 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:25:33,193 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
+2019-06-21 12:25:33,195 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 12:25:33,197 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 12:25:42,811 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 12:25:42,986 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 9742 ms
+2019-06-21 12:25:45,837 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:25:45,905 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 12:25:46,717 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 12:25:46,721 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 14.143 seconds (JVM running for 464.182)
+2019-06-21 12:25:46,734 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-06-21 12:29:13,008 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:29:15,394 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
+2019-06-21 12:29:15,396 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 12:29:15,397 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 12:29:18,330 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 12:29:18,506 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3101 ms
+2019-06-21 12:29:20,255 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:29:20,297 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 12:29:20,979 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 12:29:20,983 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 5.847 seconds (JVM running for 678.445)
+2019-06-21 12:29:20,991 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-06-21 12:29:54,076 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-06-21 12:29:54,120 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-2] Completed initialization in 38 ms
+2019-06-21 12:29:54,154 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:29:54,218 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 65
+2019-06-21 12:29:54,221 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:02,610 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-3] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:30:02,677 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-3] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 67
+2019-06-21 12:30:02,678 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-3] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:30:30,646 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:30,652 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 6
+2019-06-21 12:30:30,655 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-4] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:44,837 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:44,839 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 2
+2019-06-21 12:30:44,839 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-5] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:56,447 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:30:56,456 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 10
+2019-06-21 12:30:56,457 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:31:03,178 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-6] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:31:03,187 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-6] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 9
+2019-06-21 12:31:03,188 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-6] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:32:23,298 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8083-exec-8] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('m' (code 109)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('m' (code 109)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 3, column: 24]]
+2019-06-21 12:36:45,327 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-16] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:36:47,650 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
+2019-06-21 12:36:47,653 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 12:36:47,654 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 12:36:56,388 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 12:36:57,214 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 9545 ms
+2019-06-21 12:37:04,697 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:37:04,753 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 12:37:06,904 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 12:37:06,907 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 19.513 seconds (JVM running for 1144.368)
+2019-06-21 12:37:06,915 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-06-21 12:37:19,209 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-22] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:37:21,086 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
+2019-06-21 12:37:21,088 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-21 12:37:21,090 INFO com.silver.bars.order.OrderApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-06-21 12:37:24,071 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8083 (http)
+2019-06-21 12:37:24,207 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3107 ms
+2019-06-21 12:37:25,725 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-21 12:37:25,762 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-06-21 12:37:26,400 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8083 (http) with context path ''
+2019-06-21 12:37:26,405 INFO com.silver.bars.order.OrderApplication [restartedMain] Started OrderApplication in 5.521 seconds (JVM running for 1163.866)
+2019-06-21 12:37:26,412 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-06-21 12:38:06,591 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-06-21 12:38:06,636 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Completed initialization in 40 ms
+2019-06-21 12:38:06,677 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:38:06,730 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order)) is 54
+2019-06-21 12:38:06,751 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-1] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRegistrationController.registerOrder(Order))
+2019-06-21 12:38:11,994 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+2019-06-21 12:38:12,049 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 55
+2019-06-21 12:38:12,050 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
