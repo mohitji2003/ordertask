@@ -38,18 +38,18 @@
 2019-06-21 07:49:27,027 INFO com.silver.bars.order.OrderApplicationTests [main] No active profile set, falling back to default profiles: default
 2019-06-21 07:49:51,434 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
 2019-06-21 07:49:57,072 INFO com.silver.bars.order.OrderApplicationTests [main] Started OrderApplicationTests in 33.036 seconds (JVM running for 39.728)
-2019-06-21 07:49:59,608 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder BEFORE Cancel:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
-2019-06-21 07:49:59,620 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder AFTER Cancel:[Order:3.5 kg for £306 //order a]
-2019-06-21 07:49:59,648 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLCountRetrieve: [Order:5.5 kg for £306 //ordera + orderd, Order:1.5 kg for £307 //order c, Order:1.2 kg for £310 //order b]
-2019-06-21 07:49:59,676 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYSortOrder:[Order:1.9 kg for £1000 //order b, Order:1.1 kg for £100 //order a, Order:2.4 kg for £50 //orderd + ordere, Order:1.5 kg for £10 //order c]
-2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpecteSELLAndBUYCountRetrieve:[Order:2.7 kg for £310 //orderf + orderg, Order:2.0 kg for £308 //order h, Order:3.5 kg for £306 //order e, Order:5.5 kg for £306 //ordera + orderd, Order:1.5 kg for £307 //order c, Order:1.2 kg for £310 //order b]
-2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder BEFORE Cancel :[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,608 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder BEFORE Cancel:[Order:1.2 kg for Â£310 //order b, Order:3.5 kg for Â£306 //order a]
+2019-06-21 07:49:59,620 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelValidOrder AFTER Cancel:[Order:3.5 kg for Â£306 //order a]
+2019-06-21 07:49:59,648 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLCountRetrieve: [Order:5.5 kg for Â£306 //ordera + orderd, Order:1.5 kg for Â£307 //order c, Order:1.2 kg for Â£310 //order b]
+2019-06-21 07:49:59,676 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYSortOrder:[Order:1.9 kg for Â£1000 //order b, Order:1.1 kg for Â£100 //order a, Order:2.4 kg for Â£50 //orderd + ordere, Order:1.5 kg for Â£10 //order c]
+2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpecteSELLAndBUYCountRetrieve:[Order:2.7 kg for Â£310 //orderf + orderg, Order:2.0 kg for Â£308 //order h, Order:3.5 kg for Â£306 //order e, Order:5.5 kg for Â£306 //ordera + orderd, Order:1.5 kg for Â£307 //order c, Order:1.2 kg for Â£310 //order b]
+2019-06-21 07:49:59,684 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder BEFORE Cancel :[Order:1.2 kg for Â£310 //order b, Order:3.5 kg for Â£306 //order a]
 2019-06-21 07:49:59,688 DEBUG com.silver.bars.order.OrderDataStoreTest [main] Cancel: Order Cancelled Failed
-2019-06-21 07:49:59,688 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder AFTER Cancel:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
-2019-06-21 07:49:59,700 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLSortOrder:[Order:1.5 kg for £10 //order c, Order:2.4 kg for £50 //orderd + ordere, Order:1.1 kg for £100 //order a, Order:1.9 kg for £1000 //order b]
-2019-06-21 07:49:59,704 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateAddOrder:[Order:1.2 kg for £310 //order b, Order:3.5 kg for £306 //order a]
-2019-06-21 07:49:59,708 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateInValidOrderType:[Order:3.5 kg for £306 //order a]
-2019-06-21 07:49:59,716 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYCountRetrieve:[Order:2.7 kg for £310 //orderb + orderc, Order:2.0 kg for £308 //order d, Order:3.5 kg for £306 //order a]
+2019-06-21 07:49:59,688 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateCancelInValidOrder AFTER Cancel:[Order:1.2 kg for Â£310 //order b, Order:3.5 kg for Â£306 //order a]
+2019-06-21 07:49:59,700 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedSELLSortOrder:[Order:1.5 kg for Â£10 //order c, Order:2.4 kg for Â£50 //orderd + ordere, Order:1.1 kg for Â£100 //order a, Order:1.9 kg for Â£1000 //order b]
+2019-06-21 07:49:59,704 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateAddOrder:[Order:1.2 kg for Â£310 //order b, Order:3.5 kg for Â£306 //order a]
+2019-06-21 07:49:59,708 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateInValidOrderType:[Order:3.5 kg for Â£306 //order a]
+2019-06-21 07:49:59,716 DEBUG com.silver.bars.order.OrderDataStoreTest [main] ValidateExpectedBUYCountRetrieve:[Order:2.7 kg for Â£310 //orderb + orderc, Order:2.0 kg for Â£308 //order d, Order:3.5 kg for Â£306 //order a]
 2019-06-21 07:50:00,302 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-3] Shutting down ExecutorService 'applicationTaskExecutor'
 2019-06-21 12:18:12,315 INFO com.silver.bars.order.OrderApplication [restartedMain] Starting OrderApplication on DESKTOP-G2J4167 with PID 27488 (C:\eclipse-workspace\test-yordex\order\target\classes started by Mohit Goel in C:\eclipse-workspace\test-yordex\order)
 2019-06-21 12:18:12,329 DEBUG com.silver.bars.order.OrderApplication [restartedMain] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
@@ -144,3 +144,4 @@
 2019-06-21 12:38:11,994 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted Before execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
 2019-06-21 12:38:12,049 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Time Taken by execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders()) is 55
 2019-06-21 12:38:12,050 INFO com.silver.bars.aspect.LogModule$$EnhancerBySpringCGLIB$$d78bd770 [http-nio-8083-exec-2] Logging:::: Intercepted After execution(BaseResponseBean com.silver.bars.controller.OrderRetrieveController.getAllOrders())
+kkk
