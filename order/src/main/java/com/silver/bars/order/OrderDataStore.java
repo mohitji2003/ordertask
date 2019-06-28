@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 import com.silver.bars.aspect.TrackTime;
@@ -15,11 +16,11 @@ import com.silver.bars.model.Order;
 
 public class OrderDataStore {
 	
-	private List<Order> orderRecords;
+	private Map<String,Order> orderRecords;
     private static OrderDataStore ordregd = null;
     
     private OrderDataStore(){
-    	orderRecords = new ArrayList<Order>();
+    	orderRecords = new ConcurrentHashMap<String, Order>();
     }
     
     /*
@@ -38,9 +39,14 @@ public class OrderDataStore {
      * Adding a record into the orderRecords List
      */
     @TrackTime
-    public void add(Order std) {
-    	if(OrderType.BUY.toString().equalsIgnoreCase(std.getOrderType()) || OrderType.SELL.toString().equalsIgnoreCase(std.getOrderType()))
-    		orderRecords.add(std);
+    public void add(Order std) throws CustomException {
+    	
+    	if(orderRecords.containsKey(std.getOrderId())) {
+    		throw new CustomException(AppConstant.ORDER_REGISTER_FAILED_DUPLICATE);
+    	}else if(!OrderType.BUY.toString().equalsIgnoreCase(std.getOrderType()) && !OrderType.SELL.toString().equalsIgnoreCase(std.getOrderType())){
+    		throw new CustomException(AppConstant.ORDER_REGISTER_FAILED);
+    	}
+   		orderRecords.put(std.getOrderId(), std);
     }
 
     /*
@@ -56,16 +62,15 @@ public class OrderDataStore {
      * Deleting the order from the List
      */
     public String deleteOrder(String orderId) throws CustomException {
-    	boolean recordFound = false;
-		for(int i=0; i<orderRecords.size(); i++)
-        {
-            Order ord = orderRecords.get(i);
-            if(ord.getOrderId().equals(orderId)){
-              orderRecords.remove(i);//update the new record
-              recordFound = true;
-            }
-        }
-		if(recordFound) {
+    	//boolean recordFound = false;
+		/*
+		 * int count = orderRecords.size(); for(int i=0; i<count; i++) { Order ord =
+		 * orderRecords.get(i); if(ord.getOrderId().equals(orderId)){
+		 * orderRecords.remove(i);//update the new record recordFound = true; break; } }
+		 */
+    	
+		if(orderRecords.containsKey(orderId)) {
+			orderRecords.remove(orderId);
 			return AppConstant.ORDER_CANCELLED;
 		}else {
 			throw new CustomException(AppConstant.ORDER_CANCELLED_FAILED);
@@ -97,7 +102,7 @@ public class OrderDataStore {
    private  List<Order> getFilteredRecords(OrderType orderType) {
     	
 	   //Filtering all BUY records
-	   List<Order> orderList = orderRecords.stream().filter(ord -> ord.getOrderType().equalsIgnoreCase(orderType.toString())).collect(Collectors.toList());
+	   List<Order> orderList = orderRecords.values().stream().filter(ord -> ord.getOrderType().equalsIgnoreCase(orderType.toString())).collect(Collectors.toList());
     	
 	   //addQuantityOfSamePrice will add the same price Orders
 	   orderList = addQuantityOfSamePrice(orderList);

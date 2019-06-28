@@ -29,12 +29,16 @@ public class OrderDataStoreTest {
 		  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		  orderStore.add(ord3);
-		  orderStore.add(ord4);
-		  orderStore.add(ord5);
-		  
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+			  orderStore.add(ord3);
+			  orderStore.add(ord4);
+			  orderStore.add(ord5);
+		  } catch (CustomException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.SELL);
 	
 		  //just for reference purpose
@@ -59,11 +63,15 @@ public class OrderDataStoreTest {
 		  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		  orderStore.add(ord3);
-		  orderStore.add(ord4);
-		  orderStore.add(ord5);
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+			  orderStore.add(ord3);
+			  orderStore.add(ord4);
+			  orderStore.add(ord5);
+		  } catch (CustomException e) {
+				logger.debug("REGISTER: {}", e.getMessage());
+		  }
 		  
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.BUY);
 		  
@@ -87,12 +95,16 @@ public class OrderDataStoreTest {
 		  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		  orderStore.add(ord3);
-		  orderStore.add(ord4);
-		  orderStore.add(ord5);
-		  orderStore.add(ord6);
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+			  orderStore.add(ord3);
+			  orderStore.add(ord4);
+			  orderStore.add(ord5);
+			  orderStore.add(ord6);
+		  } catch (CustomException e) {
+				logger.debug("REGISTER: {}", e.getMessage());
+		  }
 		  
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.BUY);
 		  //just for reference purpose
@@ -115,12 +127,16 @@ public class OrderDataStoreTest {
 		  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		  orderStore.add(ord3);
-		  orderStore.add(ord4);
-		  orderStore.add(ord5);
-		  orderStore.add(ord6);
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+			  orderStore.add(ord3);
+			  orderStore.add(ord4);
+			  orderStore.add(ord5);
+			  orderStore.add(ord6);
+		  } catch (CustomException e) {
+				logger.debug("REGISTER: {}", e.getMessage());
+		  }
 		  
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.SELL);
 		  //just for reference purpose
@@ -149,15 +165,18 @@ public class OrderDataStoreTest {
 			  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		  orderStore.add(ord3);
-		  orderStore.add(ord4);
-		  orderStore.add(ord5);
-		  orderStore.add(ord6);
-		  orderStore.add(ord7);
-		  orderStore.add(ord8);
-	
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+			  orderStore.add(ord3);
+			  orderStore.add(ord4);
+			  orderStore.add(ord5);
+			  orderStore.add(ord6);
+			  orderStore.add(ord7);
+			  orderStore.add(ord8);
+		  } catch (CustomException e) {
+				logger.debug("REGISTER: {}", e.getMessage());
+		  }
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
 		  //just for reference purpose
 		  logger.debug("ValidateExpecteSELLAndBUYCountRetrieve:{}", ordList);
@@ -176,9 +195,12 @@ public class OrderDataStoreTest {
 			  
 		  OrderDataStore orderStore = OrderDataStore.getInstance();
 		  orderStore.deleteAll();
-		  orderStore.add(ord1);
-		  orderStore.add(ord2);
-		 
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+		  } catch (CustomException e) {
+				logger.debug("REGISTER: {}", e.getMessage());
+		  }
 		  List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
 		  //just for reference purpose
 		  logger.debug("ValidateAddOrder:{}", ordList);
@@ -196,9 +218,12 @@ public class OrderDataStoreTest {
 			  
 		OrderDataStore orderStore = OrderDataStore.getInstance();
 		orderStore.deleteAll();
-		orderStore.add(ord1);
-		orderStore.add(ord2);
-	
+		try {
+			orderStore.add(ord1);
+			orderStore.add(ord2);
+		} catch (CustomException e) {
+			logger.debug("REGISTER: {}", e.getMessage());
+		}
 		List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
 		//just for reference purpose
 		logger.debug("ValidateCancelValidOrder BEFORE Cancel:{}", ordList);
@@ -206,7 +231,7 @@ public class OrderDataStoreTest {
 		assertEquals(2, ordList.size()); 
 		 
 		try {
-			orderStore.deleteOrder(ord2.getOrderId());
+			orderStore.deleteOrder(ord1.getOrderId());
 			ordList = orderStore.getOrderRecords(OrderType.ALL);
 		} catch (CustomException e) {
 			  // TODO Auto-generated catch block
@@ -226,8 +251,12 @@ public class OrderDataStoreTest {
 			  
 		OrderDataStore orderStore = OrderDataStore.getInstance();
 		orderStore.deleteAll();
-		orderStore.add(ord1);
-		orderStore.add(ord2);
+		try {
+			orderStore.add(ord1);
+			orderStore.add(ord2);
+		} catch (CustomException e) {
+			logger.debug("REGISTER: {}", e.getMessage());
+		}
 	
 		List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
 		//just for reference purpose
@@ -255,15 +284,40 @@ public class OrderDataStoreTest {
 			  
 		OrderDataStore orderStore = OrderDataStore.getInstance();
 		orderStore.deleteAll();
-		orderStore.add(ord1);
-		orderStore.add(ord2);
+		try {
+			orderStore.add(ord1);
+			orderStore.add(ord2);
+		} catch (CustomException e) {
+			logger.debug("REGISTER: {}", e.getMessage());
+		}
 	
 		List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
 		//just for reference purpose
 		logger.debug("ValidateInValidOrderType:{}", ordList);
 		 
 		assertEquals(1, ordList.size()); 
+	  }
+	  
+	 /* 
+	 * Exercise 10 - Validate Add Order for duplicate orderId
+	 * user1 and user2 has added properly
+	 */
+	  @Test public void ValidateAddOrderForDuplicateId() { 
+		  Order ord1 = new Order().setOrderId("a").setOrderQuantity(new BigDecimal("3.5")).setOrderType("SELL").setPrice(306).setUserId("user1");
+		  Order ord2 = new Order().setOrderId("a").setOrderQuantity(new BigDecimal("1.2")).setOrderType("BUY").setPrice(310).setUserId("user2");
+			  
+		  OrderDataStore orderStore = OrderDataStore.getInstance();
+		  orderStore.deleteAll();
+		  try {
+			  orderStore.add(ord1);
+			  orderStore.add(ord2);
+		  } catch (CustomException e) {
+				logger.debug(" REGISTER: {}", e.getMessage());
+		  }
+		  List<Order> ordList = orderStore.getOrderRecords(OrderType.ALL);
+		  //just for reference purpose
+		  logger.debug("ValidateAddOrderForDuplicateId:{}", ordList);
 		 
-
+		  assertEquals(1, ordList.size()); 
 	  }
 }

@@ -21,7 +21,6 @@ public class Order {
 		this.orderIdText = orderIdText;
 	}
 	
-	@JsonIgnore
 	public String getOrderId() {
 		return orderId;
 	}

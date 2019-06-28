@@ -9,10 +9,9 @@ public class CustomException extends Exception
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
-	public CustomException(String s) 
+	public CustomException(String code) 
     { 
-        // Call constructor of parent Exception 
-        super(s); 
+		this.errorCode = code; 
     } 
 	
 	public CustomException(String code, Exception e) 

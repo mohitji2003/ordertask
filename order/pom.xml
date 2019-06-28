@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>com.silver.bars</groupId>
 	<artifactId>order</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>order</name>
 	<description>Demo project for Spring Boot</description>

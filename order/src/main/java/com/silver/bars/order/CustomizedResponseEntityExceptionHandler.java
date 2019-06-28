@@ -16,7 +16,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 		
 	BaseResponseBean responseBean = new BaseResponseBean();
 		
-	responseBean.setMessage(AppConstant.CUSTOM_ERROR_MESSAGE);
+	responseBean.setMessage(exp.getErrorCode());
 	logger.debug("Application Encountered CUSTOM Error---------------------");
 	exp.printStackTrace();
 	responseBean.setStatus(AppConstant.STATUS_FAILED);

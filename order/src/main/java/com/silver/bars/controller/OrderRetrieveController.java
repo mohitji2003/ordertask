@@ -1,5 +1,7 @@
 package com.silver.bars.controller;
 
+import java.util.stream.Collectors;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,8 +29,8 @@ public class OrderRetrieveController {
 	@TrackTime
     public BaseResponseBean getAllOrders() throws CustomException {
 		OrderResponseBean ordResponse = new OrderResponseBean();        
-		ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.ALL));
-		//ordResponse.setOrderListText(OrderDataStore.getInstance().getOrderRecords(OrderType.ALL).stream().map(o -> o.toString()).collect(Collectors.toList()));
+		//ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.ALL));
+		ordResponse.setOrderListText(OrderDataStore.getInstance().getOrderRecords(OrderType.ALL).stream().map(o -> o.toString()).collect(Collectors.toList()));
 		ordResponse.setStatus(AppConstant.STATUS_SUCCESS);
         return ordResponse;
 	}
@@ -43,7 +45,8 @@ public class OrderRetrieveController {
 	@TrackTime
     public BaseResponseBean buyOrders() throws CustomException {
 		OrderResponseBean ordResponse = new OrderResponseBean();        
-		ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.BUY));
+		//ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.BUY));
+		ordResponse.setOrderListText(OrderDataStore.getInstance().getOrderRecords(OrderType.BUY).stream().map(o -> o.toString()).collect(Collectors.toList()));
 		ordResponse.setStatus(AppConstant.STATUS_SUCCESS);
         return ordResponse;
 	}
@@ -58,7 +61,8 @@ public class OrderRetrieveController {
 	@TrackTime
     public BaseResponseBean sellOrders() throws CustomException {
 		OrderResponseBean ordResponse = new OrderResponseBean();        
-		ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.SELL));
+		//ordResponse.setOrderList(OrderDataStore.getInstance().getOrderRecords(OrderType.SELL));
+		ordResponse.setOrderListText(OrderDataStore.getInstance().getOrderRecords(OrderType.SELL).stream().map(o -> o.toString()).collect(Collectors.toList()));
 		ordResponse.setStatus(AppConstant.STATUS_SUCCESS);
 		ordResponse.setMessage(AppConstant.ORDER_RETRIEVE_MESSAGE);
         return ordResponse;
